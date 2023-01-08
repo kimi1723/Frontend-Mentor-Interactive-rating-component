@@ -1,0 +1,127 @@
+:root {
+	--White: hsl(0, 0%, 100%);
+	--LightGrey: hsl(217, 12%, 63%);
+	--MediumGrey: hsl(216, 12%, 54%);
+	--DarkBlue: hsl(213, 19%, 18%);
+	--VeryDarkBlue: hsl(216, 12%, 8%);
+	--Orange: hsl(25, 97%, 53%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	background-color: var(--VeryDarkBlue);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--DarkBlue);
+	height: 350px;
+	width: 350px;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	color: var(--White);
+	letter-spacing: 0.03rem;
+}
+/* Submit a review card */
+.star-image {
+	width: 18px;
+	padding: 1rem;
+	background-color: hsl(214, 22%, 28%);
+	border-radius: 50%;
+}
+.rate-us-container {
+	display: block;
+}
+.rate-us-container h1 {
+	margin-top: 1.2rem;
+	font-weight: normal;
+}
+.description,
+.rating-button {
+	color: var(--MediumGrey);
+}
+.description {
+	line-height: 1.2rem;
+}
+button {
+	border: none;
+	cursor: pointer;
+}
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
+.buttons button {
+	padding: 1.3rem;
+	border-radius: 50%;
+	background-color: hsl(214, 22%, 28%);
+	font-weight: bold;
+	font-size: 1rem;
+}
+.buttons button:hover {
+	background-color: var(--Orange);
+	color: var(--White);
+}
+.buttons button:focus {
+	background-color: var(--LightGrey);
+	color: var(--White);
+}
+.error {
+	color: tomato;
+	position: absolute;
+	top: 36rem;
+	left: 55rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
+.submit-btn {
+	width: 100%;
+	height: 2.5rem;
+	margin-top: 2rem;
+	background-color: var(--Orange);
+	color: var(--White);
+	border-radius: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	transition: 0.3s;
+}
+.submit-btn:hover {
+	background-color: var(--White);
+	color: var(--Orange);
+}
+/* Thank you card */
+.thank-you-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.thank-you-container h4 {
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	border-radius: 3rem;
+	background-color: hsl(214, 22%, 28%);
+	color: var(--Orange);
+}
+.hide {
+	display: none;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
